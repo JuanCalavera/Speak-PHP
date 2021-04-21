@@ -75,7 +75,7 @@
             <form method="post">
                 <div class="form-group">
                     <label for="text"><?= $_GET['language'] == 'EN' ? "Place the text for the system to speak" : "Coloque o texto para o sistema falar" ?> <i class="fas fa-volume-up"></i></label>
-                    <textarea name="text" class="form-control area" id="text" cols="30" rows="10"></textarea>
+                    <textarea name="text" class="form-control area" id="text" cols="30" rows="10" placeholder="<?=$_POST['text'] ? $_POST['text'] : ""?>"></textarea>
                     <button id="div5" style="display: none;" type="submit" class="btn btn-secondary btn-lg mt-3"><i class="fas fa-microphone"></i> <?= $_GET['language'] == 'EN' ? "SPEAK" : "FALAR" ?></button>
                 </div>
             </form>

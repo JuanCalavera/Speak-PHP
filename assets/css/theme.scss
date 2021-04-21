@@ -1,0 +1,28 @@
+$theme-colors:(
+    "primary": #fddfe0,
+    "secondary": #54276a
+);
+
+$font-family-brice: 'briceregular_semiexpanded';
+$font-family-base: $font-family-brice;
+
+$body-bg: #f45931;
+$body-color: #fff;
+$border-color: #54276a;
+$hr-border-color: #54276a;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+
+@font-face {
+    font-family: 'briceregular_semiexpanded';
+    src: url('../fonts/brice-regularsemiexpanded-webfont.woff2') format('woff2'),
+         url('../fonts/brice-regularsemiexpanded-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.area {
+    font-family: sans-serif;
+}
